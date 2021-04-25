@@ -130,7 +130,7 @@ const postPPGetNonce = (tokenId, mySessionId, myAuthFingerprint, proxy) => {
                 );
                 r = await postPPGetNonce(tokenId, mySessionId, myAuthFingerprint, proxy);
                 resolve(r);
-            }, config.timeout);
+            }, 10000);
         }
     });
 };
@@ -148,7 +148,7 @@ const postPPConfirm = (paypalNonce, sid, proxy, cookiejar) => {
         cookiejar.setCookie(cookie.toString(), host);
 
         var ppconfirm = {
-            method: "GET",
+            method: "POST",
             url: host + "/ckBraintree/finish",
             form: {
                 paypalNonce: paypalNonce,
@@ -222,7 +222,6 @@ const getAuthTokens = (proxy, cookiejar) => {
             //e.statusCode
             setTimeout(async() => {
                 console.log("[getAuthTokens] [RETRYING] : retrying get auth");
-                //console.log(e)
                 const returnedVal = await getAuthTokens(proxy, cookiejar);
                 resolve(returnedVal);
             }, config.timeout);
@@ -522,7 +521,7 @@ async function main() {
 
     console.log(skus)
 
-    //skus = skus.slice(0, 5)
+    skus = skus.slice(0, 1)
     console.log(skus.length)
 
     /* if (skus.length < config.accounts.length) {
