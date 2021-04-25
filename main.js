@@ -521,7 +521,6 @@ async function main() {
 
     console.log(skus)
 
-    skus = skus.slice(0, 1)
     console.log(skus.length)
 
     /* if (skus.length < config.accounts.length) {
