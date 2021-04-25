@@ -1,0 +1,12 @@
+{
+    "accounts": [{
+        "email": "user@domain.com",
+        "password": "ComplexPassw0rd123"
+    }],
+    "afk": true,
+    "atcMonitorDelay": 30000,
+    "host": "http://1.2.3.4",
+    "links": ["/networking/wired-accessories/ethernet-cables"],
+    "timeout": 5000,
+    "webhookURL": "https://discord.com/api/webhooks/1234567890123456789/hiuasd8ased982hjd2d22d2d_ASDkmnejERnmE"
+}

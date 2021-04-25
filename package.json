@@ -1,0 +1,25 @@
+{
+  "name": "overclockers",
+  "version": "1.0.0",
+  "description": "A script for monitoring and auto add to cart, send paypal link to discord webhook and listen for paypal confirmation. ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fraserdale/overclockers.git"
+  },
+  "author": "Fraser Dale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fraserdale/overclockers/issues"
+  },
+  "homepage": "https://github.com/fraserdale/overclockers#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.6",
+    "discord-webhook-node": "^1.1.8",
+    "request-promise": "^4.2.6",
+    "wait-for-user-input": "^1.0.0"
+  }
+}
