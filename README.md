@@ -1,5 +1,8 @@
 # overclockers
 
+## Description
+A script to watch overclockers categories, monitor the products, and add to cart when available. Then send the PayPal checkout link to the users Discord. 
+
 # Getting started
 - Clone the repository
 ```
